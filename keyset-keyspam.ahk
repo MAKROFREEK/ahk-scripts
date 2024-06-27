@@ -18,7 +18,10 @@ return
 
 ; Set the key to be spammed with F2
 F2::
-    Input, spam_key, L1
+    InputBox, spam_key, Insert key to be spammed here.
+    if (spam_key = "space" or spam_key = "Space" or spam_key = " ")
+        spam_key := "SC039"
+    spamming := false
 return
 
 ; Function to spam the selected key
@@ -33,3 +36,6 @@ SpamKey:
         SendInput, {%spam_key%}
     }
 return
+
+
+
