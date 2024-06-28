@@ -13,7 +13,10 @@ else
 return
 
 AntiAFK:
-Random, delay, 600, 300  ; Random delay between 1 minute and 5 minutes
+; Random delay between 1 minute and 5 minutes
+; Time in milliseconds
+Random, delay, 60000, 30000  
+
 
 Random, key, 1, 4  ; Randomly choose a key (1 = w, 2 = a, 3 = s, 4 = d)
 
